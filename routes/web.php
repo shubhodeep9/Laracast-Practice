@@ -10,12 +10,5 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-// Route::get('/', function () {
-
-// 	$people	= ['Shubhodeep', 'Amrita'];
-
-//     return view('welcome',compact('people'));
-// });
-
 Route::get('/', 'PageController@home');
+Route::get('about', 'PageController@about');
