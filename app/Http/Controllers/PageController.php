@@ -13,6 +13,6 @@ class PageController extends Controller
     }
 
     public function about(){
-    	return 'An about page';
+    	return view('about');
     }
 }
