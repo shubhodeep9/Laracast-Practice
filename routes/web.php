@@ -11,10 +11,10 @@
 |
 */
 
-Route::get('cards', 'CardsController@index');
-Route::get('cards/{card}', 'CardsController@show');
-Route::post('cards/{card}/notes', 'NotesController@store');
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::get('notes/{note}/edit', 'NotesController@edit');
+Auth::routes();
 
-Route::patch('notes/{note}', 'NotesController@update');
+Route::get('/home', 'HomeController@index')->name('home');
